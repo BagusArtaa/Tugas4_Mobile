@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_sand"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Produk Terdaftar"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProduk"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvTitle"
+        android:layout_above="@id/layoutButtons"
+        android:layout_marginVertical="8dp" />
+
+    <LinearLayout
+        android:id="@+id/layoutButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="KEMBALI"
+            android:layout_marginEnd="4dp"
+            android:backgroundTint="@color/accent_brown" />
+
+        <Button
+            android:id="@+id/btnDeleteAll"
+            android:layout_width="0dp"
+            android:layout_height="55dp"
+            android:layout_weight="1"
+            android:text="HAPUS SEMUA"
+            android:layout_marginStart="4dp"
+            android:backgroundTint="#8B0000" />
+    </LinearLayout>
+</RelativeLayout>

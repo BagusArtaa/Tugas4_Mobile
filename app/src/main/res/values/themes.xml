@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Ganti parent agar menggunakan keluarga AppCompat atau MaterialComponents -->
+    <style name="Theme.Tugas4Mobile" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primary_green</item>
+        <item name="colorPrimaryVariant">#102820</item>
+        <item name="colorOnPrimary">@color/white</item>
+    </style>
+</resources>
